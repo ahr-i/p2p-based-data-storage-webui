@@ -1,0 +1,61 @@
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="index.js"></script>
+    <title>Node</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Service Name : Node</h1>
+        </header>
+
+        <section class="info-section">
+            <div class="node-count">
+                <h2>Node Count</h2>
+                <div id="node_cnt"></div>
+            </div>
+
+            <div class="storage-info">
+                <h2>Node Storage Info</h2>
+                <div id="storage"></div>
+            </div>
+        </section>
+
+        <section class="upload-section">
+            <h2>File Upload</h2>
+            <input type="file" id="user_file" />
+            <div class="buttons">
+                <button id="file_upload_button">Upload File</button>
+                <button id="file_upload_all_button">Upload File to All Nodes</button>
+            </div>
+        </section>
+
+        <section class="file-list-section">
+            <h2>File List</h2>
+            <table id="file_list">
+                <thead>
+                    <tr>
+                        <th>Index</th>
+                        <th>File Name</th>
+                        <th>Size</th>
+                        <th>Create At</th>
+                        <th>Download</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- File Add Section -->
+                </tbody>
+            </table>
+        </section>
+        
+        <!--
+        <section class="file-list-section">
+            <h2>File List</h2>
+            <ul id="file_list"></ul>
+        </section>
+        -->
+    </div>
+</body>
+</html>
